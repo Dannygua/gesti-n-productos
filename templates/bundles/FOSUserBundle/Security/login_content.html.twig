@@ -1,0 +1,39 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% if error %}
+    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
+
+{% block stylesheets %}
+    <link href="{{ asset('css/StilesSesion.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+<form class="Login" action="{{ path("fos_user_security_check") }}" method="post">
+    {% if csrf_token %}
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+    {% endif %}
+
+    <div class="Contenedor_Sesion" >
+
+        <div class="seccion">
+            <h1>POLIJOBS</h1>
+            <br>
+            <h1><i class="far fa-user"></i></h1>
+        </div>
+
+        <div class=" seccion form-group">
+            <input placeholder="NOMBRE DE USUARIO" type="text" class="form-control" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />
+        </div>
+        <div class="seccion form-group">
+            <input placeholder="CONTRASEÑA" type="password" class="form-control" id="password" name="_password" required="required" autocomplete="current-password" />
+        </div>
+        <div class="seccion form-check">
+            <input class="form-check-input" type="checkbox" id="remember_me" name="_remember_me" value="on" />
+            <label class="form-check-label" for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+        </div>
+        <div class="seccion">
+            <button type="submit" class="btn btn1" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}">Entrar</button>
+        </div>
+    </div>
+
+</form>

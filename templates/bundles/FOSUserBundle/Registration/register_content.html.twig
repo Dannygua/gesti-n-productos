@@ -1,0 +1,17 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('css/StilesSesion.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+<div class="Contenedor_Sesion" >
+    <div class=" seccion form-group">
+        {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+        {{ form_row(form.name) }}
+        {{ form_widget(form) }}
+    </div>
+    <div class=" seccion form-group">
+        <input type="submit" class="btn btn-primary" value="{{ 'registration.submit'|trans }}" />
+    </div>
+    {{ form_end(form) }}
+</div>
