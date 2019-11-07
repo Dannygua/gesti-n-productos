@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(52, 58, 64);
+}
+
+.ofertas_Carrosel{
+    text-align: center;
+    opacity: 0.9;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+.btn{
+
+    background-color: white;
+    padding: 5%;
+    color: black;
+    border: 2px solid gray;
+}
+
+.btn:hover{
+
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+
+}
+
+.seccion{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: justify;
+    font-family:"Times New Roman";
+    font-size: 25px;
+    color: black;
+    padding-left: 8%;
+}
+
+.seccion:hover{
+    background-color: white;
+
+}
+
+.menu{
+    color:black;
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+
+h1{
+    height: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: #E7ECF0;
+    padding-top: 4%;
+
+}
+
+.titulo2{
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+
+.logo{
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.submenu{
+    background-color: rgb(52, 58, 64);
+    color: white;
+}
+
+.SelecionOferta{
+    background-color: #E7ECF0;
+
+}
+
+.list-group-item.active{
+    background-color: #E7ECF0;
+    border-color: #E7ECF0;
+
+    color: black;
+}
+.filtro-opcion {
+    background-color: rgb(52, 58, 64);
+    color: white;
+    font-size: 30px;
+}
+.submenu-link{
+    color: #E7ECF0;
+    font-size: 20px;
+    padding-bottom: 15%;
+    padding-top: 15%;
+}
+

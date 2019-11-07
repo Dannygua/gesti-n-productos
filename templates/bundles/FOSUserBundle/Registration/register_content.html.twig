@@ -7,7 +7,7 @@
 <div class="Contenedor_Sesion" >
     <div class=" seccion form-group">
         {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-        {{ form_row(form.name) }}
+        {{ form_row(form.name, {'placeholder': 'nombre'}) }}
         {{ form_widget(form) }}
     </div>
     <div class=" seccion form-group">
